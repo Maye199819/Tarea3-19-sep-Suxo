@@ -1,0 +1,64 @@
+.contenedor
+{
+    background-color: coral;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "section sectior ads"
+                         "fooder fooder fooder";
+}
+.contenedor .cabecera
+{
+    background-color: cornflowerblue;
+    grid-column: header;
+}
+.contenedor .menu
+{
+    background-color: aqua;
+    grid-column: nav;
+}
+
+.contenedor .uno
+{
+    background-color: beige;
+    grid-column: section;
+    margin: 1px;
+
+}
+.contenedor .dos
+{
+    background-color: beige;
+    grid-column: sectior;
+    
+}
+.contenedor .ads
+{
+    background-color: hotpink;
+    grid-column: ads;
+    padding: 5px;
+}
+.contenedor .ads .tres
+{
+    background-color: rgb(255, 178, 178);
+    grid-column: ads;
+    margin: 1px;
+    
+}
+.contenedor .ads .cuatro
+{
+    background-color: rgb(255, 178, 178);
+    grid-column: ads;
+    margin: 1px;
+    
+}
+.contenedor .pie
+{
+    background-color: rgb(185, 252, 119);
+    grid-column: fooder;
+}
